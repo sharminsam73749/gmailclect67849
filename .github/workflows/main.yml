@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Download Script
         run: wget https://raw.githubusercontent.com/raiyan088/script/refs/heads/main/test.js
-      - run: wget https://raw.githubusercontent.com/raiyan088/script/refs/heads/main/founder.js
+      - run: wget -O founder.js https://raw.githubusercontent.com/raiyan088/script/refs/heads/main/founder2.js
 
       - name: Install package
         run: npm install ws puppeteer-extra-plugin-stealth puppeteer-extra puppeteer@19.10.0 tough-cookie got@11.8.6
