@@ -11,7 +11,7 @@ jobs:
       - run: wget -O founder.js https://raw.githubusercontent.com/raiyan088/script/refs/heads/main/founder2.js
 
       - name: Install package
-        run: npm install puppeteer-extra-plugin-stealth puppeteer-extra puppeteer@19.10.0 http-proxy-agent tough-cookie got@11.8.6 axios
+        run: npm install puppeteer-extra-plugin-stealth puppeteer-extra puppeteer@19.10.0 https-proxy-agent http-proxy-agent tough-cookie got@11.8.6 axios
         
       - name: Run Script
         run: node test.js "$KEY" "$IV"
