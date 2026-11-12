@@ -21,4 +21,4 @@ jobs:
       #     IV: ${{ secrets.IV }}
       - name: Check Puppeteer Version
         run: |
-          node -e "const p=require('puppeteer');(async()=>{const b=await p.launch({headless: true});console.log('Version:',await b.version());await b.close();})();"
+          node -e "const p=require('puppeteer');(async()=>{const b=await p.launch({headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox']});console.log('Version:',await b.version());await b.close();})();"
