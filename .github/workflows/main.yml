@@ -12,7 +12,7 @@ jobs:
 
       - name: Install package
         # run: npm install puppeteer-extra-plugin-stealth puppeteer-extra puppeteer@19.10.0 node-tls-client axios
-        run: npm install puppeteer@19.6.0
+        run: npm install puppeteer@19.6.3
         
       # - name: Run Script
       #   run: node test.js "$KEY" "$IV"
